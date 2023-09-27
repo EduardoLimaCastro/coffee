@@ -1,5 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
 # Compiled output
 /dist
 /tmp
