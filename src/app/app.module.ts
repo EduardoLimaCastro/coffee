@@ -9,12 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BannerComponent } from './shared/banner/banner.component';
+import { ButtonPlanComponent } from './shared/button-plan/button-plan.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BannerComponent,
+    ButtonPlanComponent
   ],
   imports: [
     BrowserModule,
