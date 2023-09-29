@@ -11,6 +11,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BannerComponent } from './shared/banner/banner.component';
 import { ButtonPlanComponent } from './shared/button-plan/button-plan.component';
+import { ContainerComponent } from './shared/container/container.component';
+import { AboutComponent } from './pages/about/about.component';
+import { SubscribeComponent } from './pages/subscribe/subscribe.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ButtonPlanComponent } from './shared/button-plan/button-plan.component'
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    ButtonPlanComponent
+    ButtonPlanComponent,
+    ContainerComponent,
+    AboutComponent,
+    SubscribeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
