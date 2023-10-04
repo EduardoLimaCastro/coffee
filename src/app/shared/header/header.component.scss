@@ -1,7 +1,9 @@
 .mat-toolbar{
   background-color:#FEFCF7;
   width: 1280px;
+  max-width: 100%;
   margin:0 auto;
+  margin-bottom: 20px;
   .example-spacer {
     flex: 1 1 auto;
   }
