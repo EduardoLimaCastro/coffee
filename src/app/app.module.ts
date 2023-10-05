@@ -15,6 +15,7 @@ import { ContainerComponent } from './shared/container/container.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SubscribeComponent } from './pages/subscribe/subscribe.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
