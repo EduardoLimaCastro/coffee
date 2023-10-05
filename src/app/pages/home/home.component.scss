@@ -1,5 +1,7 @@
 .wrapper{
   position: relative;
+  display: flex;
+  flex-direction: column;
   .coffees{
     margin: 0;
     flex-shrink: 0;
@@ -14,6 +16,7 @@
     mask-image: linear-gradient(0deg, rgba(254, 252, 247, 0.00) 0%, #FEFCF7 100%);
     position: relative;
     z-index: -1;
+    margin: 150px auto;
   }
   .wrapper_products{
     max-width: 1111px;
@@ -21,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-shrink: 0;
-    margin: -95px auto;
+    margin: -245px auto;
     margin-bottom: 100px;
     position: relative;
     flex: 1;
@@ -149,8 +152,9 @@
     }
   }
   .information{
-    margin-top: 50px;
+    margin-top: 200px;
     margin-left:75px ;
+    margin-bottom: 80px;
     width: 255px;
     color: #83888F;
     font-family: Fraunces;
@@ -164,7 +168,7 @@
     flex-wrap: wrap;
     width: 1115px;
     max-width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     gap: 80px;
     margin: 0 auto;
