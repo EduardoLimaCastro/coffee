@@ -20,6 +20,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ModalComponent } from './shared/modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ContainerComponent,
     AboutComponent,
     SubscribeComponent,
-    HomeComponent
+    HomeComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatExpansionModule,
     MatIconModule,
     MatButtonToggleModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

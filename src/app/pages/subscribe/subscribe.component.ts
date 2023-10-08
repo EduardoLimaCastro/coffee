@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+import { ModalComponent } from 'src/app/shared/modal/modal.component';
 @Component({
   selector: 'app-subscribe',
   templateUrl: './subscribe.component.html',
@@ -7,6 +10,16 @@ import { Component } from '@angular/core';
 export class SubscribeComponent {
   public disabled = true;
   public enabled = false;
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(ModalComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   isDisabled: boolean = false;
   butDisabled: boolean = true;
@@ -38,7 +51,7 @@ export class SubscribeComponent {
     if(e){
     contador++;
     }
-    if (contador >= 4){
+    if (contador >= 0){
       this.butDisabled = false;
     }else{
       this.butDisabled = true;
