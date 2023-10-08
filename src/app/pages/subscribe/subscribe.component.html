@@ -223,7 +223,7 @@
     </div>
   </div>
   <div class="but">
-    <button mat-flat-button [disabled]="butDisabled" aria-label="Create your plan">Create my plan!</button>
+    <button mat-flat-button [disabled]="butDisabled" aria-label="Create your plan" (click)="modalOpen(group.value,group1.value,group2.value,group3.value,group4.value)">Create my plan!</button>
   </div>
 
 </app-container>

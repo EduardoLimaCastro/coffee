@@ -44,4 +44,7 @@ export class SubscribeComponent {
       this.butDisabled = true;
     }
   }
+  modalOpen(a: string,b: string,c: string,d: string,e: string){
+
+  }
 }
