@@ -16,6 +16,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { SubscribeComponent } from './pages/subscribe/subscribe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { MatDividerModule } from '@angular/material/divider';
     MatToolbarModule,
     MatButtonModule,
     FontAwesomeModule,
-    MatDividerModule
+    MatDividerModule,
+    MatExpansionModule,
+    MatIconModule,
+    MatButtonToggleModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

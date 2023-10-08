@@ -67,7 +67,153 @@
       </div>
     </div>
     <div class="container_right">
-
+      <mat-expansion-panel [expanded]="step === 0" (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            How do you drink your coffee?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="container">
+          <mat-button-toggle-group #group="matButtonToggleGroup" name="howDrinkCoffe" aria-label="How do you drink your coffee?" class="button_toggle_group" >
+            <mat-button-toggle value="Capsule" id="capsule" (click)="disable()">
+              <div class="vala">
+                <h2>Capsule</h2>
+                <p>Compatible with Nespresso systems and similar brewers</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="Filter" (click)="enable()">
+              <div class="vala">
+                <h2>Filter</h2>
+                <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="Espresso" (click)="enable()">
+              <div class="vala">
+              <h2>Espresso</h2>
+              <p>Dense and finely ground beans for an intense, flavorful experience</p>
+            </div>
+          </mat-button-toggle>
+          </mat-button-toggle-group>
+          <!-- <p>Chosen value is {{group.value}}</p> -->
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="step === 1" (opened)="panelOpenState = true" (closed)="panelOpenState = false" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            What type of coffee?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="container">
+          <mat-button-toggle-group #group1="matButtonToggleGroup" name="howDrinkCoffe" aria-label="How do you drink your coffee?" class="button_toggle_group" >
+            <mat-button-toggle value="Single Origin" id="origin" >
+              <div class="vala">
+                <h2>Single Origin</h2>
+                <p>Distinct, high quality coffee from a specific family-owned farm</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="Decaf" >
+              <div class="vala">
+                <h2>Decaf</h2>
+                <p>Just like regular coffee, except the caffeine has been removed</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="Blended" >
+              <div class="vala">
+              <h2>Blended</h2>
+              <p>Combination of two or three dark roasted beans of organic coffees</p>
+            </div>
+          </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="step === 2" panelOpenState = false; >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            How much would you like?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="container">
+          <mat-button-toggle-group #group2="matButtonToggleGroup" name="howDrinkCoffe" aria-label="How do you drink your coffee?" class="button_toggle_group" >
+            <mat-button-toggle value="250g" id="much" >
+              <div class="vala">
+                <h2>250g</h2>
+                <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="500g" >
+              <div class="vala">
+                <h2>500g</h2>
+                <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="1000g" >
+              <div class="vala">
+              <h2>1000g</h2>
+              <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+            </div>
+          </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel [disabled]="isDisabled" [expanded]="step === 3" panelOpenState = false; >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Want us to grind them?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="container">
+          <mat-button-toggle-group #group3="matButtonToggleGroup" name="howDrinkCoffe" aria-label="How do you drink your coffee?" class="button_toggle_group">
+            <mat-button-toggle value="Wholebean" id="grind" >
+              <div class="vala">
+                <h2>Wholebean</h2>
+                <p>Best choice if you cherish the full sensory experience</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="Filter" >
+              <div class="vala">
+                <h2>Filter</h2>
+                <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="Cafetiére" >
+              <div class="vala">
+              <h2>Cafetiére</h2>
+              <p>Course ground beans specially suited for french press coffee</p>
+            </div>
+          </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="step === 4" panelOpenState = false; >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            How often should we deliver?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="container">
+          <mat-button-toggle-group #group4="matButtonToggleGroup" name="howDrinkCoffe" aria-label="How do you drink your coffee?" class="button_toggle_group" >
+            <mat-button-toggle value="Every week" id="deliver" (click)="butenable(group.value,group1.value,group2.value,group3.value,group4.value)">
+              <div class="vala">
+                <h2>Every week</h2>
+                <p>$7.20 per shipment. Includes free first-class shipping.</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="Every 2 weeks" (click)="butenable(group.value,group1.value,group2.value,group3.value,group4.value)">
+              <div class="vala">
+                <h2>Every 2 weeks</h2>
+                <p>$9.60 per shipment. Includes free priority shipping.</p>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="Every month" (click)="butenable(group.value,group1.value,group2.value,group3.value,group4.value)">
+              <div class="vala">
+              <h2>Every month</h2>
+              <p>$12.00 per shipment. Includes free priority shipping.</p>
+            </div>
+          </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+      </mat-expansion-panel>
     </div>
   </div>
   <div class="box3">
@@ -77,13 +223,7 @@
     </div>
   </div>
   <div class="but">
-    <button
-    mat-flat-button
-    [disabled]="disabled"
-    (click)="toggleDisabled()"
-    aria-label="Create your plan">
-    Create my plan!
-  </button>
+    <button mat-flat-button [disabled]="butDisabled" aria-label="Create your plan">Create my plan!</button>
   </div>
 
 </app-container>

@@ -185,3 +185,92 @@
   --mdc-filled-button-container-color: #66D2CF;
   --mdc-filled-button-label-text-color: #FEFCF7;
 }
+.container_right{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  .mat-expansion-panel{
+    margin-left: 165px;
+    width: 800px;
+    max-width: 100%;
+    background-color: #FEFCF7 !important;
+    font-family: Fraunces;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 120% */
+    --mat-expansion-header-text-color:#83888F;
+    --mat-expansion-container-background-color:#FEFCF7;
+  }
+  .mat-expansion-panel-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mat-expansion-panel-header.mat-expanded{
+    background: #FEFCF7;
+  }
+  .mat-expansion-panel-header.mat-expanded:hover {
+    background: #FEFCF7;
+  }
+  .mat-icon{
+    color: #0E8784;
+    margin: auto 0;
+  }
+  --mat-expansion-header-indicator-color: #0E8784;
+  .container{
+    --mat-standard-button-toggle-text-color: #333D4B;
+    --mat-standard-button-toggle-background-color: #F4F1EB;
+    --mat-standard-button-toggle-divider-color: none;
+    --mat-standard-button-toggle-selected-state-background-color: #0E8784;
+    --mat-standard-button-toggle-selected-state-text-color: #ffffff;
+    mat-button-toggle-group{
+      :hover{
+        background-color: #FDD6BA;
+      }
+    }
+    mat-button-toggle{
+      margin-right: 28px;
+      width: 228px;
+      height: 250px;
+      color: #333D4B;
+      font-family: Fraunces;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 32px; /* 133.333% */
+      :hover{
+        background-color: transparent;
+      }
+      .vala{
+        width: 228px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-top: 25px;
+        h2{
+          text-align: start;
+          color: #333D4B;
+          font-family: Fraunces;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 32px; /* 133.333% */
+        }
+        p{
+          text-wrap: wrap;
+          text-align: left;
+          width: 172px;
+          color: #333D4B;
+          font-family: Barlow;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px; /* 162.5% */
+        }
+      }
+    }
+  }
+}
+
