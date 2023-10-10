@@ -10,26 +10,9 @@
   line-height: 48px; /* 120% */
   padding-left: 58px;
   padding-top: 40px;
-  .mat-mdc-dialog-container {
-    --mdc-dialog-container-color: #333D4B;
-    --mdc-dialog-subhead-color: #FFF;;
-    --mdc-dialog-supporting-text-color: #FFF;
-    .mdc-dialog__title {
-      color: white;
-      font-family: 'Fraunces';
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 48px;
-      margin: auto 0;
-  }
 }
-  h2{
-    color: #FFF;
-    font-family: Fraunces;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 48px; /* 120% */
-  }
+.text{
+  width: 540px;
+  height: 597px;
+  flex-shrink: 0;
 }

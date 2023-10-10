@@ -22,6 +22,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { StoreModule } from '@ngrx/store';
+import { appReducer } from './store/app.state';
 
 
 @NgModule({
@@ -49,7 +51,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatButtonToggleModule,
     MatFormFieldModule,
-    MatDialogModule
+    MatDialogModule,
+    StoreModule.forRoot({app: appReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]

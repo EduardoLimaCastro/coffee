@@ -24,6 +24,7 @@ export class SubscribeComponent {
   isDisabled: boolean = false;
   butDisabled: boolean = true;
 
+
   disable(){
     this.isDisabled = true;
   }
