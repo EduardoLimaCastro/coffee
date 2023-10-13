@@ -1,21 +1,4 @@
-@mixin title_box {
-  color: #333D4B;
-  font-family: Fraunces;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 48px; /* 120% */
-}
-@mixin paragraph_box{
-  width: 540px;
-  color: #333D4B;
-  font-family: Barlow;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px; /* 162.5% */
-  opacity: 0.8;
-}
+
 .banner{
   margin: 0 auto;
   width: 1280px;
@@ -53,18 +36,45 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   .box1{
+    max-width: 100%;
+    width: 1180px;
     margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 24px;
     img{
       border-radius: 9px;
+      max-width: 50%;
     }
     .text_box1{
-      h2{ @include title_box() }
-      p{ @include paragraph_box() }
+      display: flex;
+      max-width: 50%;
+      height: 340px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 24px;
+      flex-shrink: 0;
+      h2{
+        width: 60%;
+        color: #333D4B;
+        font-family: Fraunces;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px; /* 120% */ }
+      p{
+        color: #333D4B;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        opacity: 0.8;
+      }
     }
   }
   .box2{
@@ -74,17 +84,25 @@
     background-color: #2C343E;
     margin-top: 300px;
     position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     img{
+      max-width:40%;
+      border-radius: 9px;
       position: absolute;
       top: -90px;
-      right: 90px;
-      border-radius: 9px;
+      right: 20px;
     }
     .text_box2{
       display: flex;
+      position: absolute;
+      left: 20px;
       flex-direction: column;
       margin-top: 60px;
       margin-left: 90px;
+      max-width: 40%;
       h2{
         color: #FEFCF7;
         font-family: Fraunces 9pt;
@@ -102,15 +120,14 @@
         font-weight: 400;
         line-height: 26px; /* 162.5% */
         opacity: 0.8;
+        max-width: 90%;
       }
     }
   }
   .box3{
     padding-top: 150px;
     width: 1045px;
-    height: 474px;
-    margin: 0 auto;
-    margin-bottom: 170px;
+    margin: 0;
     .title{
       color: #83888F;
       font-family: Fraunces;
@@ -120,26 +137,70 @@
       line-height: 32px; /* 133.333% */
       margin-bottom: 150px;
     }
-    .content_box3{
-      display: flex;
-      justify-content: space-between;
-      .card{
-        width: 285px;
+  }
+  .box4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    .card{
+      width: 285px;
+      h2{
+        color: #333D4B;
+        font-family: Fraunces;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 36px; /* 112.5% */
+      }
+      p{
+        color: #333D4B;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+      }
+    }
+  }
+}
+
+@media (max-width: 928px) {
+  .wrapper{
+    .box1{
+      .text_box1{
         h2{
-          color: #333D4B;
-          font-family: Fraunces;
-          font-size: 32px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 36px; /* 112.5% */
+          font-size: 20px;
+        }
+      }
+    }
+    .box2{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      gap: 0px;
+      img{
+        content: url('../../../assets/about/tablet/image-quality.jpg');
+        position: relative;
+        margin-left: 30px;
+        max-width: 80%;;
+      }
+      .text_box2{
+        margin: 0;
+        position: relative;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+          width: 600px;
+          margin: 0;
         }
         p{
-          color: #333D4B;
-          font-family: Barlow;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 26px; /* 162.5% */
+          width: 600px;
+          max-width: 600px;
+          margin: 0;
         }
       }
     }
