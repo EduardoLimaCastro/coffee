@@ -29,14 +29,6 @@
     position: relative;
     flex: 1;
     .products{
-      list-style-type: none;
-      display: flex;
-      flex-wrap: wrap;
-      width: 1111px;
-      max-width: 100%;
-      align-items: center;
-      justify-content: center;
-      .item{
         margin-bottom: 100px;
         width: 255px;
         img{
@@ -62,7 +54,7 @@
           font-weight: 400;
           line-height: 26px; /* 162.5% */
         }
-      }
+
     }
   }
   .wrapper_information{

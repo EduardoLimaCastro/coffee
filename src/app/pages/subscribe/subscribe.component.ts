@@ -1,10 +1,8 @@
-import { appReducer } from './../../store/app.state';
 import { Component, Input } from '@angular/core';
 import {MatDialog, MatDialogConfig, MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { ModalComponent } from 'src/app/shared/modal/modal.component';
 import { Store } from '@ngrx/store';
-import { IAppState } from 'src/app/store/app.state';
 import { group } from '@angular/animations';
 @Component({
   selector: 'app-subscribe',
@@ -15,9 +13,7 @@ export class SubscribeComponent {
   public disabled = true;
   public enabled = false;
 
-  constructor(public dialog: MatDialog, private store: Store<{ app: IAppState}> ) {}
-
-  choices$ = this.store.select('app');
+  constructor(public dialog: MatDialog) {}
 
   openDialog() {
     const dialogRef = this.dialog.open(ModalComponent);
@@ -26,12 +22,6 @@ export class SubscribeComponent {
       console.log(`Dialog result: ${result}`);
     });
   }
-
-  drink = '';
-  type = '';
-  much = '';
-  grind = '';
-  long = '';
 
   isDisabled: boolean = false;
   butDisabled: boolean = true;
@@ -64,7 +54,7 @@ export class SubscribeComponent {
     if(e){
     contador++;
     }
-    if (contador >= 0){
+    if (contador >= 4){
       this.butDisabled = false;
     }else{
       this.butDisabled = true;

@@ -23,7 +23,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { StoreModule } from '@ngrx/store';
-import { appReducer } from './store/app.state';
 
 
 @NgModule({
@@ -51,8 +50,7 @@ import { appReducer } from './store/app.state';
     MatIconModule,
     MatButtonToggleModule,
     MatFormFieldModule,
-    MatDialogModule,
-    StoreModule.forRoot({app: appReducer})
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
