@@ -274,3 +274,19 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .box2{
+    .container_left{
+      display: none;
+    }
+    .container_right{
+      .mat-expansion-panel{
+        width: 730px;
+        margin: 0 auto;
+        mat-button-toggle{
+          width: 200px;
+        }
+      }
+    }
+  }
+}
