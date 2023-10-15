@@ -216,13 +216,13 @@
     background-size: 689px 400px;
     background-image: url('../../../assets/about/tablet/image-hero-whitecup.jpg');
     .title{
-      font-size: 32px;
-      line-height: 40px; /* 125% */
+      font-size: 4.2vw;
+      line-height: 4.2vw; /* 125% */
     }
     .banner_text{
       width: 398px;
-      max-width: 100%;
-      font-size: 15px;
+      max-width: 80%;
+      font-size: 2.21vw;
       line-height: 25px; /* 125% */
     }
   }
@@ -235,34 +235,69 @@
         content: url('../../../assets/about/tablet/image-commitment.jpg');
       }
       .text_box1{
+        gap: 0px;
         h2{
           width: 339px;
           max-width: 100%;
-          font-size: 32px;
-          line-height: 48px; /* 150% */
+          font-size: 4.5vw;
+          line-height: 15vh; /* 150% */
           margin: 0;
         }
         p{
           width: 339px;
           max-width: 100%;
-          font-size: 15px;
-          line-height: 25px; /* 166.667% */
+          font-size: 2.21vw;
+          line-height: 7vh; /* 166.667% */
         }
       }
     }
     .box2{
       margin-top: 225px;
+      width: 689px;
+      max-width: 100%;
+      .text_box2{
+        display: flex;
+        width: 540px;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        h2{
+          max-width: 100%;
+          text-align: center;
+          font-size: 4.5vw;
+          line-height: 48px; /* 150% */
+        }
+        p{
+          width: 540px;
+          max-width: 90%;
+          color: #FEFCF7;
+          text-align: center;
+          font-family: Barlow;
+          font-size: 2.21vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px; /* 166.667% */
+        }
+      }
+    }
+    .box3{
+      width: 689px;
+      max-width: 100%;
     }
     .box4{
-      width: 688px;
+      width: 689px;
+      max-width: 100%;
       flex-wrap: nowrap;
+      margin-bottom: 40px;
       .card{
         h2{
-          font-size: 24px;
+          font-size: 3.53vw;
           line-height: 36px; /* 150% */
         }
         p{
-          font-size: 16px;
+          font-size: 2.21vw;
           line-height: 26px; /* 150% */
         }
       }

@@ -56,3 +56,29 @@
     height: 120px;
 }
 }
+
+@media (max-width:768px){
+  .footer{
+    max-width: 688px;
+    height: 270px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    .mat-toolbar{
+      max-width: 688px;
+      height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img{
+        margin-top: 54px;
+      }
+      span{
+        display: none;
+      }
+      .socialmedia{
+        margin: 0;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
