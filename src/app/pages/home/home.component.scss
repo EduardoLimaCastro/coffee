@@ -69,7 +69,7 @@
       flex-shrink: 0;
       background-color: #2C343E;
       border-radius: 20px;
-      h3{
+h3{
         padding-top: 115px;
         color: #FEFCF7;
         text-align: center;
@@ -206,3 +206,96 @@
   margin-bottom: 200px;
 }
 
+@media (max-width: 768px) {
+  .wrapper{
+    max-width: 768px;
+    .coffees{
+      text-align: center;
+      font-size: 96px;
+      line-height: 72px; /* 75% */
+    }
+    .wrapper_products{
+      max-width: 689px;
+      display: flex;
+      flex-direction: column;
+      margin: -170px auto;
+      margin-bottom: 80px;
+      .products{
+        max-width: 573px;
+        display: flex;
+        .products_text{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+          h3{
+            text-align: left;
+          }
+          p{
+            text-align: left;
+          }
+        }
+      }
+    }
+    .wrapper_information{
+      max-width: 688px;
+      height: 573px;
+      margin: 0 auto;
+      .information_background{
+        max-width: 688px;
+        height: 573px;
+      }
+    }
+    .wrapper_cards{
+      max-width: 689px;
+      margin: -150px auto;
+      .card{
+        width: 573px;
+        max-width: 100%;
+        height: 180px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 58px;
+        border-radius: 8px;
+        img{
+          margin-left: 58px;
+        }
+        .card_text{
+          h4{
+            font-size: 24px;
+            line-height: 32px; /* 133.333% */
+            margin-bottom: 0;
+            text-align: left;
+          }
+          p{
+            max-width: 344px;
+            font-size: 15px;
+            line-height: 25px; /* 166.667% */
+            text-align: left;
+          }
+        }
+      }
+    }
+    .wrapper_infos{
+      max-width: 689px;
+      height: 530px;
+      gap:0;
+      margin-bottom: 15px;
+      .info{
+        max-width: 223px;
+        h3{
+          max-width: 223px;
+        }
+        h4{
+          max-width: 200px;
+          font-size: 15px;
+          font-style: normal;
+          line-height: 25px; /* 166.667% */
+        }
+      }
+    }
+  }
+  .but{
+    margin-left: 39px;
+  }
+}

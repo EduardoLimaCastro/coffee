@@ -36,3 +36,20 @@
   }
 }
 
+@media (max-width:768px){
+.banner{
+  background-image: url('../../../assets/home/tablet/image-hero-coffeepress.jpg');
+  background-repeat: no-repeat;
+  background-size: 689px 500px;
+  width: 689px;
+  height: 500px;
+  .title{
+    font-size: 48px;
+    line-height: 48px; /* 100% */
+  }
+  .banner_text{
+    font-size: 15px;
+    line-height: 25px; /* 166.667% */
+  }
+}
+}
