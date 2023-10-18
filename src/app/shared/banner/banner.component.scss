@@ -42,12 +42,14 @@
   background-repeat: no-repeat;
   background-size: 689px 500px;
   width: 689px;
+  max-width: 100%;
   height: 500px;
   .title{
     font-size: 48px;
     line-height: 48px; /* 100% */
   }
   .banner_text{
+    max-width: 80%;
     font-size: 15px;
     line-height: 25px; /* 166.667% */
   }

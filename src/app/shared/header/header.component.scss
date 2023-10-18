@@ -4,6 +4,8 @@
   max-width: 100%;
   margin:0 auto;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
   .example-spacer {
     flex: 1 1 auto;
   }
@@ -24,8 +26,29 @@
   button:hover{
     color: black !important;
   }
+  .menu_mobile{
+    display: none;
+  }
 }
 
 @media(max-width:520px) {
-
+  .mat-toolbar{
+    .menu_desktop{
+      display: none;
+    }
+    .menu_mobile{
+      display: block;
+      mat-menu{
+        display: flex;
+        flex-direction: column;
+        mat-menu-item{
+          font-family: Barlow;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 15px;
+        }
+      }
+    }
+  }
 }

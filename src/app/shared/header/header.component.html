@@ -2,8 +2,27 @@
   <mat-toolbar>
     <img src="../../../assets/home/logo.svg" alt="Logo Coffeeroasters" class="logo" routerLink="">
     <span class="example-spacer"></span>
-    <button mat-button aria-label="Home" routerLink="">HOME</button>
-    <button mat-button aria-label="About Us" routerLink="/about">ABOUT US</button>
-    <button mat-button aria-label="Create your plan" routerLink="/subscribe">CREATE YOUR PLAN</button>
+    <div class="menu_desktop">
+      <button mat-button aria-label="Home" routerLink="">HOME</button>
+      <button mat-button aria-label="About Us" routerLink="/about">ABOUT US</button>
+      <button mat-button aria-label="Create your plan" routerLink="/subscribe">CREATE YOUR PLAN</button>
+    </div>
+    <div class="menu_mobile">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="">
+          <span>HOME</span>
+        </button>
+        <button mat-menu-item routerLink="/about">
+          <span>ABOUT US</span>
+        </button>
+        <button mat-menu-item routerLink="/subscribe">
+          <span>CREATE YOUR PLAN</span>
+        </button>
+      </mat-menu>
+    </div>
+
   </mat-toolbar>
 </div>
