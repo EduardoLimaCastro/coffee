@@ -1,5 +1,6 @@
 .teste{
   width: 540px;
+  max-width: 100%;
   height: 136px;
   background: #333D4B;
   color: #FFF;
@@ -13,6 +14,7 @@
 }
 .text{
   width: 540px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +22,7 @@
   margin-top: 60px;
   .box3_text{
     width:428px;
+    max-width: 80%;
     color: #83888F;
     font-family: Fraunces;
     font-size: 24px;
@@ -37,8 +40,10 @@
   }
   .box3_subtext{
     width:428px;
+    max-width: 80%;
     p{
     width: 428px;
+    max-width: 80%;
     color: #333D4B;
     font-family: Barlow;
     font-size: 16px;
@@ -82,4 +87,8 @@
     }
 
   }
+}
+
+@media (max-width:768px) {
+
 }

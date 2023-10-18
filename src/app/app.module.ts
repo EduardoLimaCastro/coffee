@@ -23,6 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { StoreModule } from '@ngrx/store';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { StoreModule } from '@ngrx/store';
     MatIconModule,
     MatButtonToggleModule,
     MatFormFieldModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
