@@ -55,3 +55,27 @@
   }
 }
 }
+
+@media (max-width:376px) {
+  .banner {
+    width: 327px;
+    height: 500px;
+    background-image: url('../../../assets/home/mobile/image-hero-coffeepress.jpg');
+    background-repeat: no-repeat;
+    background-size: 327px 500px;
+    .title{
+      width: 279px;
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 40px; /* 100% */
+      text-align: center;
+      margin: 0 auto;
+    }
+    .banner_text {
+      text-align: center;
+      margin: 0 auto;
+      font-size: 15px;
+      line-height: 25px; /* 166.667% */
+    }
+  }
+}
