@@ -91,7 +91,9 @@ export function openEditDialog(dialog: MatDialog,a: string,b: string,c: string,d
 
   }
 
-  const dialogRef = dialog.open(ModalComponent, config)
+  const dialogRef = dialog.open(ModalComponent,{
+    maxWidth:'327px',
+  });
 
   dialogRef.afterClosed();
 }

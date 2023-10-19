@@ -90,5 +90,44 @@
 }
 
 @media (max-width:768px) {
-
+  *{
+    width: 327px;
+    border-radius: 8px;
+  }
+  .cdk-global-overlay-wrapper {
+    display: block;
+    width: 327px;
+  }
+  .teste {
+    width: 327px;
+    height: 88px;
+    color: #FFF;
+    font-family: Fraunces;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    padding: 0;
+    padding-left: 24px;
+  }
+  .text {
+    width: 327px;
+    padding: 5px;
+    .box3_text{
+      font-size: 24px;
+      width: 325px;
+    }
+    .box3_subtext {
+      width: 325px;
+      font-size: 15px;
+    }
+  }
+  .actions {
+    display: flex;
+    .subtotal {
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
 }
