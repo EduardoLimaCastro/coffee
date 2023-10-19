@@ -11,4 +11,5 @@ export class FooterComponent {
   faInstagram = faInstagram;
   faTwitter = faTwitter;
 
+
 }
