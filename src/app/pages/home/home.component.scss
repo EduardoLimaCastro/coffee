@@ -309,6 +309,29 @@ h3{
   }
 }
 
+@media (max-width:638px) {
+  .wrapper {
+    .wrapper_products {
+      .products{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        .products_text {
+          width: 282px;
+          margin: 0 auto;
+          align-items: center;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width:376px) {
   .wrapper {
     width: 375px;
